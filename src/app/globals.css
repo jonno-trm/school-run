@@ -22,6 +22,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Prevent iOS from zooming in on input focus (requires font-size >= 16px) */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Desktop: show a subtle background behind the centred app shell */
+@media (min-width: 1024px) {
+  html {
+    background-color: #0f172a;
+  }
+}
+
 body {
   background-color: var(--color-surface-raised);
   color: #0f172a;
